@@ -1,7 +1,12 @@
 import axios from 'axios';
 import { Property, CreatePropertyDto } from '@/types/property';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+// Use Vercel proxy in production, localhost in development
+const API_URL = process.env.NODE_ENV === 'production' 
+  ? '/api'  // This will be proxied to Render by Vercel
+  : 'http://localhost:5000/api';
+
+console.log('API_URL:', API_URL, 'NODE_ENV:', process.env.NODE_ENV);
 
 const api = axios.create({
   baseURL: API_URL,
