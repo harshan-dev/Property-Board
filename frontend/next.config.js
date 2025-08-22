@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
   images: {
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -19,7 +16,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'your-render-backend-url.onrender.com',  // Replace with your actual Render URL
+        hostname: 'property-board.onrender.com',  // Your actual Render URL
         port: '',
         pathname: '/uploads/**',
       },
