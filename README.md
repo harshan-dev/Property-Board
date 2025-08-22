@@ -3,6 +3,7 @@
 A full-stack property listing application built with Next.js, Node.js, and PostgreSQL.
 - Developer: Sumith Harshan
 - Email: sumith.harshan@gmail.com | sumithdev.com@gmail.com
+- Web: https://harshan.dev
 
 ## Features
 
