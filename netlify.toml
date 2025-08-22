@@ -1,0 +1,19 @@
+[build]
+  base = "frontend"
+  command = "npm ci && npm run build"
+  publish = "frontend/out"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Handle API calls 
+[[redirects]]
+  from = "/api/*"
+  to = "https://property-board.onrender.com/api/:splat"
+  status = 200
+  force = true
