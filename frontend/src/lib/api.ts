@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Property, CreatePropertyDto } from '@/types/property';
 
 const API_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-render-backend-url.onrender.com/api'  // Replace with your actual Render backend URL
+  ? 'https://property-board.onrender.com/api'  // Replace with your actual Render backend URL
   : 'http://localhost:5000/api';
 
 const api = axios.create({
