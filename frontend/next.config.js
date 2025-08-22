@@ -16,7 +16,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'property-board.onrender.com',  // Your actual Render URL
+        hostname: 'property-board.onrender.com',
         port: '',
         pathname: '/uploads/**',
       },
