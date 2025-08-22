@@ -1,7 +1,7 @@
 [build]
-  base = "frontend"
-  command = "npm ci && npm run build"
-  publish = "frontend/out"
+  command = "npm run build"
+  publish = "frontend/.next"
+  base = "frontend/"
 
 [build.environment]
   NODE_VERSION = "18"
