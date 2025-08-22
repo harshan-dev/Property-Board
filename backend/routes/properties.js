@@ -80,10 +80,14 @@ router.post('/', upload.single('image'), async (req, res) => {
 
     let imagePath = null;
     if (req.file) {
-      // save relative path to db "/uploads/filename"
-      imagePath = `/uploads/${req.file.filename}`;
-      //console.log('img uploaded:', req.file.path);
-      //console.log('saved image path for db:', imagePath);
+      // Create full URL for production, relative path for development
+      const baseUrl = process.env.NODE_ENV === 'production' 
+        ? `${req.protocol}://${req.get('host')}`  // Full production URL
+        : `${req.protocol}://${req.get('host')}`;  // Full URL for both
+      
+      imagePath = `${baseUrl}/uploads/${req.file.filename}`;
+      console.log('img uploaded:', req.file.path);
+      console.log('saved image path for db:', imagePath);
     }
 
     // Try to save to db
