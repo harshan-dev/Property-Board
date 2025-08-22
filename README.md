@@ -176,7 +176,7 @@ property-board/
 ## Future Enhancements
 
 - User authentication and authorization
-- Property image upload functionality
+- Property images upload functionality
 - Search and filter capabilities
 - Property details page
 - Edit and delete property functionality
