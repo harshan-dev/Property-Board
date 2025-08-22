@@ -18,6 +18,12 @@ const nextConfig = {
         pathname: '/**',
       },
       {
+        protocol: 'https',
+        hostname: 'your-render-backend-url.onrender.com',  // Replace with your actual Render URL
+        port: '',
+        pathname: '/uploads/**',
+      },
+      {
         protocol: 'http',
         hostname: 'localhost',
         port: '5000',
