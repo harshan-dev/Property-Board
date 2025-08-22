@@ -113,8 +113,8 @@ Adds a new property to the database.
   "title": "Property Title",
   "price": 350000,
   "location": "City, State",
-  "description": "Optional description",
-  "image": "Optional image URL"
+  "description": "Property Description",
+  "image": "Uploaded image"
 }
 ```
 
@@ -126,8 +126,8 @@ Adds a new property to the database.
   "title": "Property Title",
   "price": 350000,
   "location": "City, State",
-  "description": "Optional description",
-  "image": "Optional image URL",
+  "description": "Property Description",
+  "image": "Uploaded image",
   "created_at": "2025-01-01T00:00:00.000Z"
 }
 ```
