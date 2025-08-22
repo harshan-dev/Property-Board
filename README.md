@@ -1,6 +1,8 @@
 # Property Board Application
 
 A full-stack property listing application built with Next.js, Node.js, and PostgreSQL.
+- Developer: Sumith Harshan
+- Email: sumith.harshan@gmail.com | sumithdev.com@gmail.com
 
 ## Features
 
@@ -31,6 +33,13 @@ A full-stack property listing application built with Next.js, Node.js, and Postg
 - **PostgreSQL** with proper schema design
 - Auto-incrementing IDs and timestamps
 - Sample seed data included
+
+### Live Application Hosting Platforms
+
+- Images Hosting: **cloudinary.com** 
+- Frontend Application Hosting: **vercel.com** 
+- Backend Application with Database Hosting: **render.com** 
+
 
 ## Prerequisites
 
@@ -133,6 +142,12 @@ DB_PORT=5432
 DB_USER=postgres
 DB_PASSWORD=your_password
 DB_NAME=property_board
+
+# Cloudinary Configuration 
+CLOUDINARY_CLOUD_NAME=cloud_name
+CLOUDINARY_API_KEY=api_key
+CLOUDINARY_API_SECRET=api_secret
+CLOUDINARY_URL=cloudinary_url
 ```
 
 ## Project Structure
@@ -160,6 +175,10 @@ property-board/
 │   │   │   └── api.ts
 │   │   └── types/
 │   │       └── property.ts
+│   │   ├── about/
+│   │   │   └── page.ts
+│   │   ├── contact/
+│   │   │   └── page.ts
 │   └── package.json
 └── db/
     └── init.sql
@@ -176,7 +195,6 @@ property-board/
 ## Future Enhancements
 
 - User authentication and authorization
-- Property images upload functionality
 - Search and filter capabilities
 - Property details page
 - Edit and delete property functionality
