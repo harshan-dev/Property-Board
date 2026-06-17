@@ -200,3 +200,6 @@ property-board/
 - Property details page
 - Edit and delete property functionality
 - Pagination for large property lists
+
+
+<!-- Pull Shark contribution 3 by sumithharshan -->
