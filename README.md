@@ -202,4 +202,3 @@ property-board/
 - Pagination for large property lists
 
 
-<!-- Pull Shark contribution 2 by sumithharshan -->
